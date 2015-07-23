@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jlk</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <div>
+    <nav>
+  <ul>
+    <li><%= link_to "Home", welcome_home_path%></li>
+    <li><%= link_to "Missão", welcome_mission_path%></li>
+    <li><%= link_to "Quem Somos", welcome_partners_path%></li>
+    <li><%= link_to "Produtos", welcome_products_path%></li>
+    <li><%= link_to "Contato", welcome_contact_path%></li>
+  </ul>
+</nav>
+  </div>
+</head>
+
+<body>
+
+  <%= yield %>
+
+</body>
+</html>
