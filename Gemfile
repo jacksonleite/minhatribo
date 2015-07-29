@@ -27,6 +27,9 @@ gem 'therubyracer', platforms: :ruby
 #CSS
 gem 'bootstrap-sass',       '3.2.0.0'
 
+#gem for serial connections
+gem 'serialport', '~> 1.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
