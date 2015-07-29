@@ -33,13 +33,14 @@
  <%sp = SerialPort.new(port_str, baud_rate, data_bits, stop_bits, parity)%>
 
  #just read forever  
- <%while true do%>
+ #<%while true do%>
    <%sp_char = sp.getc%>
    <%if sp_char%>
     <div id="message" hidden>
-     <%=printf("%c", sp_char)%>
+     #<%=printf("%c", sp_char)%>
+     sp_char
     </div>
-   <%end%>
+  # <%end%>
   <%end%>
 
   <%= yield %>
