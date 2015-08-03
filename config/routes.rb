@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/partners', to: 'welcome#partners'
   get 'welcome/products', to: 'welcome#products'
   get 'welcome/contact', to: 'welcome#contact'
+  get 'welcome/serialport', to: 'welcome#serialport'
 
   root 'welcome#home'
 
