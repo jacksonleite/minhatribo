@@ -12,13 +12,19 @@
   background-color: #F0F0F0;
   border: rgb(0, 0, 0); /* fallback color */
   border: rgba(0, 0, 0, 0.7);
-   
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
+  
+  margin-left: 100px;
+  margin-right: -20px;
+  margin-top: -60px;
+  margin-bottom: -100px;
   border-radius: 2px;
   padding: 5px;
-}
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+
+  color: #777;
+  width: 100%;
+ }
 
 .wpcf7-textarea {
   margin-top: 0px;
@@ -34,11 +40,16 @@
 }
 
 .wpcf7-text {
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 150%;
+  margin-top: -40px;
+  margin-left: 100px;
+  margin-bottom: 0px;
+  width: 100%;
   color: #666666;
   height: 60px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+
   
 }
 
@@ -85,6 +96,7 @@ font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
 border: 0px;
 border-radius: 5px;
+margin-bottom: -400px;
 }
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');

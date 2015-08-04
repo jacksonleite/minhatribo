@@ -30,6 +30,9 @@ gem 'bootstrap-sass',       '3.2.0.0'
 #gem for serial connections
 gem 'serialport', '~> 1.3.1'
 
+#simple for
+gem 'simple_form', '~> 3.0.0.rc'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

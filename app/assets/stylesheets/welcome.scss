@@ -22,7 +22,6 @@ body {
   margin-left:800px;
   color: white; 
   font: bold 1em Helvetica; 
-
   margin-bottom: 70px;
   width: 100px;
   height: 376px;
@@ -32,6 +31,21 @@ body {
   overflow-x: hidden; 
  
 }
+
+.productlabels {
+  margin-top: -10px;
+  margin-left: -100px;
+  color: white; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: -260px;
+  width: 100px;
+  height: 376px;
+  padding: 80px 200px;
+  overflow-x: hidden; 
+ 
+}
+
 
 .image { 
    position: relative; 
@@ -178,7 +192,7 @@ h3 {
   margin-bottom: 50px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: #000000;
 }
 
 h4 {

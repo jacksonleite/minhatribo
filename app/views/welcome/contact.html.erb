@@ -1,3 +1,12 @@
+<%= simple_form_for(welcome_contact_path) do |c|%>
+  <%= c.error_notification %>
+  
+<script type="text/javascript">
+  window.onload = function() {
+  document.getElementById("nome").focus();
+}
+</script>
+
 <div>
   <h1 style="margin-left: 460px;">
       Fale conosco!  
@@ -5,55 +14,38 @@
 </div>
   
   <div class="pwhite">
-  <p class="whitebody" style="margin-left: -240px; margin-top: -60px; font-size: 1.6em">
-      Seu Nome (obrigatorio)
-      <br>
-  </p>
-  <p style="margin-left: -190px;">
-      <span>
-          <input class="wpcf7 wpcf7-textarea wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-name" type="name" aria-required="true" size="80" value="" name="your-name" >
-        </span>
-  </p>
-  
-  <br>
-  <br>
-  <br>
 
-  <p class="whitebody" style="margin-left: -190px; font-size: 1.6em">
-      <br>
-      Seu Email (obrigatorio)
-  </p>
-  <p style="margin-left: -190px;">
-        <span>
-          <input class="wpcf7 wpcf7-textarea wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" aria-required="true" size="80" value="" name="your-email" >
-        </span>
-    </p> 
-
-    <br>
-    <br>
-    <br>
-
-    <p class="whitebody" style="margin-left: -190px; font-size: 1.6em">
-      <br>
-      Mensagem
-  </p>
-  <p style="margin-left: -190px; margin-bottom: -15px;">
-        
-          <textarea class="wpcf7 wpcf7-text wpcf7-validates-as-required" cols="25" aria-required="true" size="60" value="" name="mensagem" >
-          </textarea>
-        
-    </p> 
-
-    <br>
-    <br>
-    <br>
-    <div id="message" hidden>
-      Mensagem Enviada!
+    <div style="margin-left: -280px; margin-top: -130px">
+          <%= c.label :name, "Nome*", class: "productlabels", id: 'name'%>
+          <%= c.text_field :name, required: true, autofocus: true, class: "wpcf7"%>
     </div>
-    <button class="but" style="margin-left: -190px; margin-top: -50px;" onclick="alert(document.getElementById('message').innerHTML); window.location.reload();">
-      Enviar
-    </button>
-    
+  
+    <br>
+    <br>
 
+    <div style="margin-left: -280px; margin-top: -80px">
+          <%= c.label :email, 'Email*', class: "productlabels"%>
+          <br>
+          <%= c.text_field :email, required: true, clickable: true, class: "wpcf7"%>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="margin-left:-280px; margin-top: -80px">
+          <%= c.label :message, 'Mensagem*', class: 'productlabels' %>
+          <br>
+          <br>
+          <br>
+          <%= c.text_area :message, required: true, class: "wpcf7-text wpcf7-validates-as-required required=true" %>
+    </div>
+    </p> 
+
+    
+    <div style="margin-left: -180px; margin-top: 20px; margin-bottom: -100px;">
+     <%= c.submit "Enviar", class: "but" %>
+    </div>
 
   </div>
+
+  <% end %>

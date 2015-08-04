@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  resources :contacts, only: [:new, :create]
+  
+  post 'welcome/contact', to: 'contacts#create'
   
   get 'welcome/home', to: 'welcome#home'
   get 'welcome/mission', to: 'welcome#mission'
